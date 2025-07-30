@@ -1,4 +1,3 @@
-
 import streamlit as st
 from Room import Room
 
@@ -151,8 +150,11 @@ def process_command(command):
     return "Unknown command."
 
 def show_intro():
-    st.write("You awaken on a couch in a dark room...")
-    st.write("A voice speaks out from the darkness.")
+    st.write("You awaken, lying on a couch in a dark room barely illuminated by some unknown light source.")
+    st.write("Around you, crickets chirp, and the house creaks and groans as its foundation settles and shifts.")
+    st.write("You awake... confused. Where are you? And when did you fall asleep? Or better yet... who are you?")
+    st.write("As you sit up and muse these questions, a voice speaks out from the darkness, its origin unknown.")
+    st.write("\"I see you're finally awake. You've been asleep for a long while now.\"")
     choice = st.radio("What do you say?", ["Who are you?", "Where am I?", "Stay Quiet"])
     if st.button("Continue"):
         st.session_state.stage = "riddle1"
