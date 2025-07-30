@@ -1,5 +1,5 @@
 import streamlit as st
-from game_logic_full import initialize_game, run_stage
+from game_logic import initialize_game, run_stage
 
 st.set_page_config(page_title="Ode to Rhythm", layout="centered")
 
