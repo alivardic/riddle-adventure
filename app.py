@@ -1,3 +1,5 @@
+## Base Script to try and turn this into a streamlit app
+
 import streamlit as st
 from game_logic import create_rooms, display_status, process_command
 
